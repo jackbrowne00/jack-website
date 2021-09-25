@@ -1,9 +1,17 @@
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <h1>jacks website</h1>
+      <div className="top">
+        <h1>Hey i'm Jack</h1>
+        <h2>I'm a Front-End Software Engineer</h2>
+      </div>
+
+      <div className="bottom">
+        <h1>Hey i'm Jack</h1>
+        <h2>I'm a Front-End Software Engineer</h2>
+      </div>
     </div>
   );
 }
