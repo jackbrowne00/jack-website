@@ -1,20 +1,30 @@
-.navbar {
-    background-color: #060b26;
-    height: 80px;
-    display: flex;
+@import '../../global.scss';
 
+.navbar {
+    display: flex;
 }
 
 .menu-bars{
+    position: fixed;
     margin-left: 2rem;
-    font-size: 2rem;
+    margin-top: 2rem;
+    font-size: 2.2rem;
     background:  none;
+}
 
+.menu-bars.active{
+    position: fixed;
+    display: none;
+    margin-left: 2em;
+    margin-top: 2em;
+    font-size: 3rem;
+    background:  none;
 }
 
 .nav-menu{
-    background-color: #060b26;
-    width: 250px;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(8px);
+    width: 280px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -27,48 +37,44 @@
 .nav-menu.active {
     left: 0;
     transition: 350ms;
-
 }
 
 .nav-text {
     display: flex;
     justify-content: start;
     align-items: center;
-    padding: 8px 0px 8px 16px;
+    padding: 0px 0px 0px 0px;
     list-style: none;
-    height: 60px;
+    height: 80px;
 }
 
 .nav-text a {
     text-decoration: none;
-    color: #FFFFFF;
-    font-size: 18px;
-    width: 95%;
+    color: white;
+    font-size: 25px;
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 0px 16px;
+    padding: 0px 36px;
     border-radius:  4px;
 
 }
 
 .nav-text a:hover {
-    background-color: blueviolet;
-
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
 .nav-menu-items {
     width: 100%;
-
 }
 
 .navbar-toggle {
-    background-color: #060b26;
     width: 100%;
-    height: 80px;
+    height: 100px;
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: flex-start;
 }
 
 span {

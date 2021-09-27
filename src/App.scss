@@ -8,26 +8,11 @@
 }
 
 .home, .projects, .contact{
+    background-color: slategray;
     display: flex;
-    height: 90vh;
+    height: 200vh;
     align-items: center;
     justify-content: center;
     font-size: 3rem;
 
 }
-
-.top{
-    width: 100vw;
-    height: 300px;
-    background-color: $cream;
-    color: $blue;
-}
-
-.bottom{
-    width: 100vw;
-    height: 300px;
-    background-color: $blue;
-    color: yellow;
-}
-
-

@@ -3,7 +3,7 @@ import '../../App.scss'
 
 function Projects() {
     return (
-        <div>
+        <div className="projects">
             <h1>Projects Page</h1>
         </div>
     )
