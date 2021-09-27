@@ -1,20 +1,18 @@
 @import './global.scss';
 
+
 * {    
+    box-sizing:  border-box;
     margin: 0;
     padding: 0;
 }
 
-.top{
-    width: 100vw;
-    height: 300px;
-    background-color: $cream;
-    color: $blue;
-}
+.home, .projects, .contact{
+    background-color: slategray;
+    display: flex;
+    height: 200vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
 
-.bottom{
-    width: 100vw;
-    height: 300px;
-    background-color: $blue;
-    color: yellow;
 }
