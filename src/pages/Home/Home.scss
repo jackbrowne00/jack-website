@@ -2,56 +2,76 @@
 
 .homeContainer{
 
-
-    .homeHeaderContainer{
+    .homeHeader{
         top: 0;
-        height: 400px;
-        margin-top: 200px;
-        display: flex;
+        margin: auto;
+        max-width: 1300px;
+        
+        .homeHeaderContainer{
+            display: flex;
+            flex-direction: row;
+            margin: 150px 120px 150px 120px;
+            
+            .homeHeaderText{
+                flex: 0.7;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
 
-        .homeHeaderText{
-            margin-left: 200px;
-            flex: 0.7;
+                .homeHeaderH1{
+                    color: $slate;
+                    // font: medium 500;
+                    font-style: italic;
+                    font-size: 3.5rem;
+                    text-align:start;
 
-            .homeHeaderH1{
-                color: $slate;
-                font: medium 500;
-                font-style: italic;
-                font-size: 3.5rem;
-                text-align:start;
+                };
 
+                .homeHeaderH2{
+                    color: $orange;
+                    // font: regular;
+                    font-style: italic;
+                    font-size:  2.5rem;
+                };
             };
-
-            .homeHeaderH2{
-                color: $orange;
-                font: regular;
-                font-style: italic;
-                font-size:  2.5rem;
-            };
-        };
-
-        .homeHeaderImgContainer{
-            flex: 0.3;
-
-            .homeHeaderImg{
-                height: 200px;
-                border-radius: 50%;
-
+            
+            .homeHeaderImgContainer{
+                flex: 0.3;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                .homeHeaderImg{
+                    height: 200px;
+                    width: 200px;
+                    border-radius: 50%;
+                };
             };
         };
     };
 
-    .aboutMeContainer{
-        height: 500px;
+    .aboutMe{
+        display: flex;
+        justify-content: center;
+        text-align: left;
         background-color: $slate;
 
-        .aboutMeTitle{
-            color: $orange;
-            font-style: italic;
+        .aboutMeContainer{
+            max-width: 1200px;
+            margin: 100px 100px 100px 100px;
 
+            .aboutMeTitle{
+                color: $orange;
+                font-style: italic;
+                font-size: 2rem;
+            };
 
-        }
-    }
+            .aboutMeContent{
+                color: white;
+
+            }
+        };
+    };
 
     .emptyContainer{
         height:800px;
