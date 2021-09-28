@@ -4,9 +4,10 @@ import '../../App.scss';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
-import { SidebarData } from './SidebarData';
+import { NavigationData } from '../../NavigationData';
 import './Navbar.scss';
 import {  IconContext } from 'react-icons';
+import '../../global.scss';
 
 
 function Navbar() {
@@ -15,14 +16,17 @@ function Navbar() {
     const showSidebar = () => setSidebar(!sidebar)
 
     return (
-        <>
-        <IconContext.Provider value={{color: "white"}}>
+        <div className="app">
+
+        <IconContext.Provider value={{color: '#D65A00'}}>
         <div className="navbar">
             <Link to="#" className={sidebar ? 'menu-bars active' : 'menu-bars'}>
                 <FaIcons.FaBars onClick={showSidebar}/>
             </Link>
-
         </div>
+        </IconContext.Provider>
+
+        <IconContext.Provider value={{color: "white"}}>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
             <ul className='nav-menu-items' onClick={showSidebar}>
                 <li className='navbar-toggle'>
@@ -30,7 +34,7 @@ function Navbar() {
                        <AiIcons.AiOutlineClose />
                     </Link>
                 </li>
-                {SidebarData.map((item, index) => {
+                {NavigationData.map((item, index) => {
                     return (
                         <li key={index} className={item.cName}>
                             <Link to={item.path}>
@@ -44,22 +48,7 @@ function Navbar() {
         </nav>
         </IconContext.Provider>
 
-
-        </>
-        // <nav>
-
-
-        //     {/* <h3>Logo/Home</h3>
-        //     <ul>
-        //         <Link to='projects'>
-        //             <li>Projects</li>
-        //         </Link>  
-
-        //         <Link to='/contact'>
-        //             <li>Contact</li>
-        //         </Link>  
-        //     </ul> */}
-        // </nav>
+        </div>
     )
 }
 

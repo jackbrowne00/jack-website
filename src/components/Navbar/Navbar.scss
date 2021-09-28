@@ -22,8 +22,10 @@
 }
 
 .nav-menu{
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: $slate;
+    opacity: 0.95;
     backdrop-filter: blur(8px);
+    border-style: white;
     width: 280px;
     height: 100vh;
     display: flex;
@@ -62,7 +64,7 @@
 }
 
 .nav-text a:hover {
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: $orange;
 }
 
 .nav-menu-items {

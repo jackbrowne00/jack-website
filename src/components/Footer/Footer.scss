@@ -1,0 +1,24 @@
+@import '../../global.scss';
+
+.footerContainer{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 250px;
+    bottom: 0;
+
+    .footerTop{
+        flex: 0.8;
+        background-color: $slate;
+    
+    };
+
+    .footerBottom{
+        flex: 0.2;
+        background-color: #c85d05;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    };
+};

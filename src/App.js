@@ -4,11 +4,13 @@ import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
 import Projects from './pages/Projects/Projects';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Footer from './components/Footer/Footer';
 
 
 
 function App() {
   return (
+    <>
     <Router>
       <div className="App">
         <Navbar />
@@ -17,8 +19,10 @@ function App() {
             <Route path="/projects" component={Projects}/>
             <Route path="/contact" component={Contact}/>
           </Switch> 
+        <Footer/>
       </div>
     </Router>  
+    </>
   );
 }
 
