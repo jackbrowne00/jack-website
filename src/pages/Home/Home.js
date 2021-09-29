@@ -3,6 +3,7 @@ import '../../App.scss';
 import './Home.scss'
 import profilePicture from '../../images/homeProfileImage.jpg'
 import { AboutMeData } from './AboutMeData'
+import ListIconBlock from '../../components/ListIconBlock/ListIconBlock';
 
 function Home() {
     return (
@@ -19,15 +20,23 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className="aboutMe">
+            <ListIconBlock 
+                title="About Me"
+            />
+
+
+
+            {/* <div className="aboutMe">
                 <div className="aboutMeContainer">
                     <h3 className="aboutMeTitle">About Me</h3>
                     <div className="aboutMeContent">
                         {AboutMeData.map((item, index) => {
                             return (
-                                <div key={index}className={item.iconCName}>
-                                    {item.icon} 
-                                    <div  className={item.textCName}>
+                                <div className={item.aboutContentCName}>
+                                    <a className={item.iconCName} href="https://javascript.com">
+                                    {item.icon}
+                                    </a>
+                                    <div className={item.textCName}>
                                     {item.text}
                                     </div>
                                 </div>
@@ -35,7 +44,9 @@ function Home() {
                         })}
                     </div>
                 </div>
-            </div>
+            </div> */}
+
+
             <div className="emptyContainer">
             </div>
         </div>

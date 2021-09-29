@@ -1,15 +1,13 @@
 @import  '../../global.scss';
 
-.homeContainer{
+.homeContainer {
 
     .homeHeader{
-        top: 0;
         margin: auto;
         max-width: 1300px;
         
         .homeHeaderContainer{
             display: flex;
-            flex-direction: row;
             margin: 150px 120px 150px 120px;
             
             .homeHeaderText{
@@ -19,17 +17,13 @@
                 justify-content: center;
 
                 .homeHeaderH1{
-                    color: $slate;
-                    // font: medium 500;
+                    color: $headingPrimary;
                     font-style: italic;
                     font-size: 3.5rem;
-                    text-align:start;
-
                 };
 
                 .homeHeaderH2{
-                    color: $orange;
-                    // font: regular;
+                    color: $headingSecondary;
                     font-style: italic;
                     font-size:  2.5rem;
                 };
@@ -51,7 +45,7 @@
     };
 
     .aboutMe{
-        background-color: $slate;
+        background-color: $backgroundSecondary;
         padding: 120px;
         
         .aboutMeContainer{
@@ -59,21 +53,38 @@
             margin: auto;
 
             .aboutMeTitle{
-                color: $orange;
+                color: $headingSecondary;
                 font-style: italic;
                 font-size: 2.2rem;
                 padding-bottom: 40px
             };
 
             .aboutMeContent{
-                color: white;
+                color: $textPrimary;
                 font-size: 1.5rem;
-            }
+
+                .aboutContent{
+                    display: flex;
+                    align-items: center;
+
+                    .aboutMeIcon{
+                        color: $textPrimary;
+                        text-decoration: none;
+                        margin-right: 50px;
+                        font-size: 50px;
+                    };
+
+                    .aboutMeText{
+                        margin: 30px 0px;
+                        
+                    };
+                };
+            };
         };
     };
 
     .emptyContainer{
-        height:800px;
+        height:600px;
         background-color:white;
     }
 };
