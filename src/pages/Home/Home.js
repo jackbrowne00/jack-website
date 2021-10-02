@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '../../App.scss';
 import './Home.scss'
 import profilePicture from '../../images/homeProfileImage.jpg'
@@ -6,6 +6,7 @@ import { AboutMeData } from './AboutMeData'
 import ListIconBlock from '../../components/ListIconBlock/ListIconBlock';
 
 function Home() {
+
     return (
     
         <div className="homeContainer">
@@ -50,7 +51,6 @@ function Home() {
             <div className="emptyContainer">
             </div>
         </div>
-                
     )
 }
 
