@@ -11,16 +11,8 @@ import * as BiIcons from 'react-icons/bi';
 import * as SiIcons from 'react-icons/si';
 import * as DiIcons from 'react-icons/di';
 
-
-
-
-
-
-
 function ListIconBlock(props) {
-    
     return (
-        
         <div className="ListIconBlock">
             <div className="ListIconBlockContainer">
                 <h3 className="ListIconBlockTitle">{props.title}</h3>
@@ -65,5 +57,3 @@ export default ListIconBlock
         // </div>
         // </div>
         
-
-

@@ -16,7 +16,7 @@ function Navbar() {
     const showSidebar = () => setSidebar(!sidebar)
 
     return (
-        <div className="app">
+        <div className="navContainer">
         <div className="navbar">
             <Link to="#" className={sidebar ? 'menu-bars active' : 'menu-bars'}>
                 <FaIcons.FaBars onClick={showSidebar}/>

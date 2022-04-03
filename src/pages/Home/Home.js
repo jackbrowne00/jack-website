@@ -14,7 +14,7 @@ function Home() {
                 <div className="homeHeaderContainer">
                     <div className="homeHeaderText">
                         <h1 className="homeHeaderH1">Hey, i'm  Jack Browne</h1>
-                        <h2 className="homeHeaderH2">I'm a front end Software Engineer</h2>
+                        <h2 className="homeHeaderH2">I'm a Software Engineer</h2>
                     </div>
                     <div className="homeHeaderImgContainer">
                     <img src={profilePicture} alt="Logo" className="homeHeaderImg" />
